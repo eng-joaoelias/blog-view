@@ -1,99 +1,130 @@
-/* Importa a fonte Figtree do Google Fonts */
+/* Importa a fonte "Figtree" do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-/* Estilos para a seção de atribuição no final da página */
+/* Estilo para a seção de atribuição no rodapé */
 .attribution {
     font-size: 1.65vh; /* Define o tamanho da fonte */
-    text-align: center; /* Alinha o texto ao centro */
-    padding-bottom: 1.7vh; /* Adiciona espaço abaixo do texto */
+    text-align: center; /* Centraliza o texto */
+    padding-bottom: 1.7vh; /* Adiciona espaço inferior */
 }
 
-/* Estilos para os links na seção de atribuição */
+/* Estilo para os links na seção de atribuição */
 .attribution a {
     color: hsl(228, 45%, 44%); /* Define a cor dos links */
 }
 
 /* Define estilos padrão para todos os elementos */
 * {
-    font-family: "Figtree", sans-serif; /* Define a fonte para todo o documento */
+    font-family: "Figtree", sans-serif; /* Define a fonte padrão */
     padding: 0; /* Remove o preenchimento padrão */
-    margin: 0; /* Remove as margens padrão */
-    vertical-align: baseline; /* Alinha verticalmente com a linha de base */
-    border: 0; /* Remove bordas */
-    letter-spacing: 0.13vh; /* Adiciona espaçamento entre letras */
+    margin: 0; /* Remove a margem padrão */
+    vertical-align: baseline; /* Alinha verticalmente os elementos */
+    border: 0; /* Remove a borda padrão */
+    letter-spacing: 0.13vh; /* Define o espaçamento entre letras */
 }
 
-/* Estilos para a seção principal do layout */
+/* Estilos para a seção principal do conteúdo */
 .principal {
-    display: flex; /* Usa flexbox para organizar os elementos */
-    justify-content: center; /* Alinha os itens ao centro horizontalmente */
-    align-items: center; /* Alinha os itens ao centro verticalmente */
-    height: 100vh; /* Define a altura da seção principal para ocupar toda a altura da tela */
+    display: flex; /* Usa o layout de flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura como 100% da altura da viewport */
 }
 
 /* Estilos para a caixa de publicação */
 .principal .caixa-publicacao {
     background-color: rgb(255, 255, 255); /* Define a cor de fundo */
-    display: flex; /* Usa flexbox para organizar os elementos */
-    flex-direction: column; /* Organiza os elementos em coluna */
-    align-items: center; /* Alinha os itens ao centro horizontalmente */
-    border: 0.12vw solid #111111; /* Adiciona uma borda sólida */
+    display: flex; /* Usa o layout de flexbox */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    border: 0.12vw solid #111111; /* Adiciona uma borda */
     box-shadow: 1.15vw 1.15vw 0px #000000; /* Adiciona sombra */
     border-radius: 20px; /* Adiciona bordas arredondadas */
-    width: 23vw; /* Define a largura da caixa */
+    width: 23vw; /* Define a largura */
     transition: 0.35s; /* Adiciona uma transição suave */
 }
 
-/* Efeitos ao passar o mouse sobre a caixa de publicação */
+/* Estilos quando passa o mouse sobre a caixa de publicação */
 .principal .caixa-publicacao:hover {
-    box-shadow: 1.7vw 1.7vw #000000; /* Altera a sombra ao passar o mouse */
+    box-shadow: 1.7vw 1.7vw #000000; /* Aumenta a sombra */
     transition: 0.35s; /* Adiciona uma transição suave */
 }
 
-/* Estilos para as imagens dentro da caixa de publicação */
+/* Estilos para a imagem no blog */
+.principal .caixa-publicacao .img-blog {
+    padding-top: 3vh; /* Adiciona espaço superior */
+}
+
+/* Estilos para a imagem dentro da caixa de publicação */
 .principal .caixa-publicacao .img-blog img {
     border-radius: 10px; /* Adiciona bordas arredondadas */
-    width: 17.5vw; /* Define a largura da imagem */
+    width: 17.5vw; /* Define a largura */
 }
 
 /* Estilos para a categoria do artigo */
 .principal .caixa-publicacao .conteudo-resumo-materia .categoria-materia {
     background-color: rgb(246, 205, 89); /* Define a cor de fundo */
     width: 9vw; /* Define a largura */
-    text-align: center; /* Alinha o texto ao centro */
-    padding-top: 1vh; /* Adiciona espaço acima do texto */
-    padding-bottom: 1vh; /* Adiciona espaço abaixo do texto */
-    margin-bottom: 2vh; /* Adiciona espaço abaixo do elemento */
+    text-align: center; /* Centraliza o texto */
+    padding-top: 1vh; /* Adiciona espaço superior */
+    padding-bottom: 1vh; /* Adiciona espaço inferior */
+    margin-bottom: 2vh; /* Adiciona espaço inferior */
     border-radius: 7px; /* Adiciona bordas arredondadas */
-    margin-left: 1.7vw; /* Define a margem esquerda */
+    margin-left: 1.7vw; /* Adiciona margem à esquerda */
 }
 
-/* Efeito ao passar o mouse sobre a categoria */
+/* Estilos quando passa o mouse sobre a categoria do artigo */
 .principal .caixa-publicacao .conteudo-resumo-materia .categoria-materia:hover {
-    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
 }
 
-/* Estilos para o texto da data de publicação */
+/* Estilos para o texto dentro da categoria do artigo */
+.principal .caixa-publicacao .conteudo-resumo-materia .categoria-materia p {
+    font-size: 2.2vh; /* Define o tamanho da fonte */
+}
+
+/* Estilos para a data de publicação do artigo */
+.principal .caixa-publicacao .conteudo-resumo-materia .data-publicacao-materia {
+    margin-top: 1vh; /* Adiciona espaço superior */
+    margin-bottom: 1vh; /* Adiciona espaço inferior */
+    margin-left: 1.7vw; /* Adiciona margem à esquerda */
+}
+
+/* Estilos para o texto dentro da data de publicação do artigo */
 .principal .caixa-publicacao .conteudo-resumo-materia .data-publicacao-materia p {
     font-size: 1.9vh; /* Define o tamanho da fonte */
 }
 
 /* Estilos para o título do artigo */
 .principal .caixa-publicacao .conteudo-resumo-materia .titulo-materia {
-    margin-top: 2.5vh; /* Adiciona espaço acima do título */
-    margin-bottom: 2.5vh; /* Adiciona espaço abaixo do título */
-    margin-left: 1.7vw; /* Define a margem esquerda */
+    margin-top: 2.5vh; /* Adiciona espaço superior */
+    margin-bottom: 2.5vh; /* Adiciona espaço inferior */
+    margin-left: 1.7vw; /* Adiciona margem à esquerda */
     transition: 0.3s; /* Adiciona uma transição suave */
 }
 
-/* Efeito ao passar o mouse sobre o título */
+/* Estilos para o título do artigo quando passa o mouse sobre ele */
 .principal .caixa-publicacao .conteudo-resumo-materia .titulo-materia:hover{
-    color: rgb(246, 210, 72); /* Altera a cor ao passar o mouse */
-    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    color: rgb(246, 210, 72); /* Muda a cor do texto */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
     transition: 0.3s; /* Adiciona uma transição suave */
+}
+
+/* Estilos para o conteúdo do artigo */
+.principal .caixa-publicacao .conteudo-resumo-materia {
+    padding-top: 3vh; /* Adiciona espaço superior */
+    padding-left: 2vh; /* Adiciona espaço à esquerda */
+    padding-right: 2vh; /* Adiciona espaço à direita */
+    padding-bottom: 3vh; /* Adiciona espaço inferior */
 }
 
 /* Estilos para o resumo do artigo */
+.principal .caixa-publicacao .conteudo-resumo-materia .resumo-materia {
+    margin-bottom: 2vh; /* Adiciona espaço inferior */
+    margin-left: 1.7vw; /* Adiciona margem à esquerda */
+}
+
+/* Estilos para o texto dentro do resumo do artigo */
 .principal .caixa-publicacao .conteudo-resumo-materia .resumo-materia p {
     font-size: 1.9vh; /* Define o tamanho da fonte */
     color: rgb(131, 131, 131); /* Define a cor do texto */
@@ -101,14 +132,14 @@
 
 /* Estilos para as informações do autor */
 .principal .caixa-publicacao .conteudo-resumo-materia .info-autor {
-    display: flex; /* Usa flexbox para organizar os elementos */
-    flex-direction: row; /* Organiza os elementos em linha */
-    align-items: center; /* Alinha os itens ao centro verticalmente */
-    margin-left: 1.7vw; /* Define a margem esquerda */
+    display: flex; /* Usa o layout de flexbox */
+    flex-direction: row; /* Empilha os elementos horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-left: 1.7vw; /* Adiciona margem à esquerda */
 }
 
 /* Estilos para o nome do autor */
 .principal .caixa-publicacao .conteudo-resumo-materia .info-autor .nome-autor {
-    padding-left: 0.6vw; /* Adiciona espaço à esquerda do texto */
+    padding-left: 0.6vw; /* Adiciona espaço à esquerda */
     font-size: 2.2vh; /* Define o tamanho da fonte */
 }
