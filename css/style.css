@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+.attribution {
+    font-size: 1.65vh;
+    text-align: center;
+    padding-bottom:1.7vh;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    font-family: "Figtree", sans-serif;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    border: 0;
+    letter-spacing: 0.13vh;
+}
+
+.principal .caixa-publicacao .img-blog {
+    border-radius: 10px;
+}
+
+body {
+    background-color: rgb(245, 208, 78);
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.principal .caixa-publicacao {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #111111;
+    box-shadow: 8px 8px 0px #000000;
+    border-radius: 20px;
+    width: 23vw;
+    transition: 0.35s;
+}
+
+.principal .caixa-publicacao:hover {
+    box-shadow: 16px 16px 0px #000000;
+    transition: 0.35s;
+}
+
+.principal .caixa-publicacao .img-blog {
+    padding-top: 3vh;
+}
+
+.principal .caixa-publicacao .img-blog img {
+    border-radius: 10px;
+    width: 17.5vw;
+}
+
+.principal .caixa-publicacao .conteudo-resumo-materia .categoria-materia {
+    /*Botao pra categoria materia*/
+    background-color: rgb(246, 205, 89);
+    width: 8.5vw;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-bottom: 2vh;
+    border-radius: 7px;
+    margin-left: 1.7vw;
+}
+
+.principal .caixa-publicacao .conteudo-resumo-materia .categoria-materia:hover {
+    cursor: pointer;
+}
+
+.principal .caixa-publicacao .conteudo-resumo-materia .categoria-materia p {
+    font-size: 2.2vh;
+}
+
+.principal .caixa-publicacao .conteudo-resumo-materia .data-publicacao-materia {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1.7vw;
+}
+
+.principal .caixa-publicacao .conteudo-resumo-materia .data-publicacao-materia p {
+    font-size: 1.9vh;
+}
+
+.principal .caixa-publicacao .conteudo-resumo-materia .titulo-materia {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    margin-left: 1.7vw;
+    transition: 0.3s;
+}
+
+.principal .caixa-publicacao .conteudo-resumo-materia .titulo-materia h1 {
+    font-size: 4vh;
+    font-weight: 800;
+}
+
+.principal .caixa-publicacao .conteudo-resumo-materia .titulo-materia:hover{
+    color: rgb(246, 210, 72);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.principal .caixa-publicacao .conteudo-resumo-materia {
+    padding-top: 3vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-bottom: 3vh;
+}
+
+.principal .caixa-publicacao .conteudo-resumo-materia .resumo-materia {
+    margin-bottom: 2vh;
+    margin-left: 1.7vw;
+}
+
+.principal .caixa-publicacao .conteudo-resumo-materia .resumo-materia p {
+    font-size: 1.9vh;
+    color: rgb(131, 131, 131);
+}
+
+.principal .caixa-publicacao .conteudo-resumo-materia .info-autor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1.7vw;
+}
+
+.principal .caixa-publicacao .conteudo-resumo-materia .info-autor .nome-autor {
+    padding-left: 0.6vw;
+    font-size: 2.2vh;
+}
