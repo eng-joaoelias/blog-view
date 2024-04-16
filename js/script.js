@@ -1,57 +1,66 @@
+// Obtém a data atual
 const dataHoje = new Date();
 
-const diaHoje = dataHoje.getDay();
+// Obtém o dia, mês e ano atual
+const diaHoje = dataHoje.getDate();
 const mesAtual = dataHoje.getMonth();
 const anoAtual = dataHoje.getFullYear();
+
+// Variáveis para armazenar o nome do mês e a data formatada
 let stringMes;
 let diaHojeExtenso;
+
+// Seletor para o elemento HTML onde a data será exibida
 let localEscritaData = window.document.querySelector("#diaHoje");
 
+// Converte o número do mês em uma string com o nome do mês correspondente
 switch (mesAtual) {
     case 0:
-        stringMes = "janeiro"
+        stringMes = "janeiro";
         break;
     case 1:
-        stringMes = "ferereiro"
+        stringMes = "fevereiro";
         break;
     case 2:
-        stringMes = "março"
+        stringMes = "março";
         break;
     case 3:
-        stringMes = "abril"
+        stringMes = "abril";
         break;
     case 4:
-        stringMes = "maio"
+        stringMes = "maio";
         break;
     case 5:
-        stringMes = "junho"
+        stringMes = "junho";
         break;
     case 6:
-        stringMes = "julho"
+        stringMes = "julho";
         break;
     case 7:
-        stringMes = "agosto"
+        stringMes = "agosto";
         break;
     case 8:
-        stringMes = "setembro"
+        stringMes = "setembro";
         break;
     case 9:
-        stringMes = "outubro"
+        stringMes = "outubro";
         break;
     case 10:
-        stringMes = "novembro"
+        stringMes = "novembro";
         break;
     case 11:
-        stringMes = "dezembro"
+        stringMes = "dezembro";
         break;
     default:
         break;
 }
 
+// Formata a data para exibir o dia, mês e ano
 if (diaHoje < 10) {
     diaHojeExtenso = "0" + diaHoje + " de " + stringMes + " de " + anoAtual + ".";
 } else {
     diaHojeExtenso = diaHoje + " de " + stringMes + " de " + anoAtual + ".";
 }
 
+// Insere a data formatada no elemento HTML
 localEscritaData.innerText = diaHojeExtenso;
