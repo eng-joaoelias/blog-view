@@ -1,204 +1,210 @@
-/* Importa a fonte Figtree do Google Fonts */
+/* Importa a fonte 'Figtree' do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-/* Estilo para a atribuição no rodapé */
+/* Estiliza a atribuição no rodapé */
 .attribution {
     font-size: 1.65vh; /* Define o tamanho da fonte em unidades de viewport height (vh) */
-    text-align: center; /* Centraliza o texto */
-    padding-bottom: 1.7vh; /* Adiciona espaço abaixo do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding-bottom:1.7vh; /* Adiciona um espaço na parte inferior */
 }
 
-/* Estilo para links na atribuição */
+/* Estiliza os links na atribuição */
 .attribution a {
-    color: hsl(228, 45%, 44%); /* Define a cor dos links */
+    color: hsl(228, 45%, 44%); /* Define a cor do link */
 }
 
-/* Estilo global */
+/* Define estilos globais */
 * {
     font-family: "Figtree", sans-serif; /* Define a fonte padrão para todo o documento */
     padding: 0; /* Remove o preenchimento padrão */
     margin: 0; /* Remove as margens padrão */
-    vertical-align: baseline; /* Alinha os elementos verticalmente na linha de base */
+    vertical-align: baseline; /* Alinha verticalmente os elementos à linha de base */
     border: 0; /* Remove as bordas padrão */
     letter-spacing: 0.13vh; /* Adiciona espaçamento entre letras */
 }
 
-/* Estilo para imagens dentro da classe .img-blog */
+/* Estiliza a imagem dentro de .img-blog */
 .principal .caixa-publicacao .img-blog {
-    border-radius: 30px; /* Define um raio de borda para as imagens */
+    border-radius: 30px; /* Define o raio da borda para criar cantos arredondados */
 }
 
-/* Estilo para o corpo da página */
+/* Define o plano de fundo para o corpo do documento */
 body {
-    background-color: rgb(245, 208, 78); /* Define a cor de fundo do corpo da página */
+    background-color: rgb(245, 208, 78); /* Define a cor de fundo */
 }
 
-/* Estilos para a seção principal */
+/* Estiliza o contêiner principal */
 .principal {
-    display: flex; /* Define o layout da seção como flexível */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    height: 100vh; /* Define a altura da seção principal como 100% da viewport height (vh) */
+    display: flex; /* Permite que o contêiner principal seja exibido como um flex container */
+    justify-content: center; /* Alinha os itens ao centro no eixo principal (horizontal) */
+    align-items: center; /* Alinha os itens ao centro no eixo secundário (vertical) */
+    height: 100vh; /* Define a altura do contêiner principal para preencher toda a altura da viewport */
 }
 
-/* Estilos para a caixa de publicação */
+/* Estiliza a caixa de publicação */
 .principal .caixa-publicacao {
     background-color: rgb(255, 255, 255); /* Define a cor de fundo da caixa de publicação */
-    display: flex; /* Define o layout da caixa como flexível */
-    flex-direction: column; /* Define a direção dos itens como coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    border: 0.12vw solid #111111; /* Adiciona uma borda sólida */
+    display: flex; /* Permite que a caixa de publicação seja exibida como um flex container */
+    flex-direction: column; /* Define a direção dos itens como uma coluna */
+    align-items: center; /* Alinha os itens ao centro no eixo secundário (vertical) */
+    border: 0.12vw solid #111111; /* Define uma borda sólida */
     box-shadow: 1.15vw 1.15vw 0px #000000; /* Adiciona uma sombra */
-    border-radius: 20px; /* Define um raio de borda */
+    border-radius: 20px; /* Define o raio da borda para criar cantos arredondados */
     width: 25vw; /* Define a largura da caixa de publicação */
     transition: 0.35s; /* Adiciona uma transição suave */
 }
 
-/* Estilos para a caixa de publicação ao passar o mouse */
+/* Estiliza a caixa de publicação ao passar o mouse */
 .principal .caixa-publicacao:hover {
     box-shadow: 1.7vw 1.7vw #000000; /* Altera a sombra ao passar o mouse */
     transition: 0.35s; /* Adiciona uma transição suave */
 }
 
-/* Estilos para a imagem dentro da classe .img-blog */
+/* Estiliza a imagem dentro de .img-blog */
+.principal .caixa-publicacao .img-blog {
+    padding-top: 3vh; /* Adiciona espaço acima da imagem */
+}
+
+/* Estiliza a imagem dentro de .img-blog */
 .principal .caixa-publicacao .img-blog img {
-    border-radius: 10px; /* Define um raio de borda para a imagem */
+    border-radius: 10px; /* Define o raio da borda para criar cantos arredondados */
     width: 20vw; /* Define a largura da imagem */
 }
 
-/* Estilos para a categoria de matéria */
+/* Estiliza a categoria da matéria */
 .principal .caixa-publicacao .conteudo-resumo-materia .categoria-materia {
-    background-color: rgb(246, 205, 89); /* Define a cor de fundo da categoria */
-    width: 9vw; /* Define a largura da categoria */
-    text-align: center; /* Centraliza o texto */
-    padding-top: 1vh; /* Adiciona espaço acima do texto */
-    padding-bottom: 1vh; /* Adiciona espaço abaixo do texto */
-    margin-bottom: 2vh; /* Adiciona espaço abaixo da categoria */
-    border-radius: 10px; /* Define um raio de borda */
-    margin-left: 1.7vw; /* Adiciona margem à esquerda */
-    word-wrap: break-word; /* Quebra a palavra longa em várias linhas */
+    /*Botao pra categoria materia*/
+    background-color: rgb(246, 205, 89); /* Define a cor de fundo */
+    width: 9vw; /* Define a largura */
+    text-align: center; /* Alinha o texto ao centro */
+    padding-top: 1vh; /* Adiciona espaço acima do conteúdo */
+    padding-bottom: 1vh; /* Adiciona espaço abaixo do conteúdo */
+    margin-bottom: 2vh; /* Adiciona espaço abaixo do elemento */
+    border-radius: 10px; /* Define o raio da borda para criar cantos arredondados */
+    margin-left: 1.7vw; /* Define a margem à esquerda */
+    word-wrap: break-word; /* Quebra a palavra quando necessário */
 }
 
-/* Estilos para o link dentro da categoria */
+/* Estiliza os links dentro da categoria da matéria */
 .principal .caixa-publicacao .conteudo-resumo-materia .categoria-materia p strong a {
     text-decoration: none; /* Remove a decoração do link */
 }
 
-/* Estilos para links visitados dentro da categoria */
+/* Define a cor dos links visitados dentro da categoria da matéria */
 .principal .caixa-publicacao .conteudo-resumo-materia .categoria-materia p strong a:visited {
     color: #000000; /* Define a cor do link visitado */
 }
 
-/* Estilos ao passar o mouse sobre a categoria */
+/* Estiliza a categoria da matéria ao passar o mouse */
 .principal .caixa-publicacao .conteudo-resumo-materia .categoria-materia:hover {
-    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    cursor: pointer; /* Altera o cursor para o estilo de mão ao passar o mouse */
 }
 
-/* Estilos para o texto dentro da categoria */
+/* Estiliza o texto dentro da categoria da matéria */
 .principal .caixa-publicacao .conteudo-resumo-materia .categoria-materia p {
     font-size: 2vh; /* Define o tamanho da fonte */
 }
 
-/* Estilos para a data de publicação */
+/* Estiliza a data da publicação da matéria */
 .principal .caixa-publicacao .conteudo-resumo-materia .data-publicacao-materia {
-    margin-top: 1vh; /* Adiciona espaço acima da data */
-    margin-bottom: 1vh; /* Adiciona espaço abaixo da data */
-    margin-left: 1.7vw; /* Adiciona margem à esquerda */
+    margin-top: 1vh; /* Adiciona espaço acima do elemento */
+    margin-bottom: 1vh; /* Adiciona espaço abaixo do elemento */
+    margin-left: 1.7vw; /* Define a margem à esquerda */
 }
 
-/* Estilos para o texto dentro da data de publicação */
+/* Estiliza o texto dentro da data da publicação da matéria */
 .principal .caixa-publicacao .conteudo-resumo-materia .data-publicacao-materia p {
     font-size: 1.9vh; /* Define o tamanho da fonte */
 }
 
-/* Estilos para o título da matéria */
+/* Estiliza o título da matéria */
 .principal .caixa-publicacao .conteudo-resumo-materia .titulo-materia {
-    margin-top: 2.5vh; /* Adiciona espaço acima do título */
-    margin-bottom: 2.5vh; /* Adiciona espaço abaixo do título */
-    margin-left: 1.7vw; /* Adiciona margem à esquerda */
+    margin-top: 2.5vh; /* Adiciona espaço acima do elemento */
+    margin-bottom: 2.5vh; /* Adiciona espaço abaixo do elemento */
+    margin-left: 1.7vw; /* Define a margem à esquerda */
     transition: 0.3s; /* Adiciona uma transição suave */
 }
 
-/* Estilos para o texto dentro do título da matéria */
+/* Estiliza o título da matéria ao passar o mouse */
 .principal .caixa-publicacao .conteudo-resumo-materia .titulo-materia h1 {
     font-size: 4vh; /* Define o tamanho da fonte */
-    font-weight: 800; /* Define o peso da fonte */
+    font-weight: 800; /* Define o peso da fonte como negrito */
 }
 
-/* Estilos ao passar o mouse sobre o título da matéria */
-.principal .caixa-publicacao .conteudo-resumo-materia .titulo-materia:hover {
-    color: rgb(246, 210, 72); /* Altera a cor do texto ao passar o mouse */
-    cursor: pointer; /* Altera o cursor ao passar o mouse */
+/* Estiliza o título da matéria ao passar o mouse */
+.principal .caixa-publicacao .conteudo-resumo-materia .titulo-materia:hover{
+    color: rgb(246, 210, 72); /* Define a cor do texto ao passar o mouse */
+    cursor: pointer; /* Altera o cursor para o estilo de mão ao passar o mouse */
     transition: 0.3s; /* Adiciona uma transição suave */
 }
 
-/* Estilos para o conteúdo da matéria */
+/* Estiliza o conteúdo da matéria */
 .principal .caixa-publicacao .conteudo-resumo-materia {
-    padding-top: 3vh; /* Adiciona espaço acima do conteúdo */
-    padding-left: 2vh; /* Adiciona espaço à esquerda do conteúdo */
-    padding-right: 2vh; /* Adiciona espaço à direita do conteúdo */
-    padding-bottom: 3vh; /* Adiciona espaço abaixo do conteúdo */
+    padding-top: 3vh; /* Adiciona espaço acima do elemento */
+    padding-left: 2vh; /* Adiciona espaço à esquerda do elemento */
+    padding-right: 2vh; /* Adiciona espaço à direita do elemento */
+    padding-bottom: 3vh; /* Adiciona espaço abaixo do elemento */
 }
 
-/* Estilos para o resumo da matéria */
+/* Estiliza o resumo da matéria */
 .principal .caixa-publicacao .conteudo-resumo-materia .resumo-materia {
-    margin-bottom: 2vh; /* Adiciona espaço abaixo do resumo */
-    margin-left: 1.7vw; /* Adiciona margem à esquerda */
+    margin-bottom: 2vh; /* Adiciona espaço abaixo do elemento */
+    margin-left: 1.7vw; /* Define a margem à esquerda */
 }
 
-/* Estilos para o texto dentro do resumo da matéria */
+/* Estiliza o texto dentro do resumo da matéria */
 .principal .caixa-publicacao .conteudo-resumo-materia .resumo-materia p {
     font-size: 1.9vh; /* Define o tamanho da fonte */
     color: rgb(131, 131, 131); /* Define a cor do texto */
 }
 
-/* Estilos para as informações do autor */
+/* Estiliza as informações do autor */
 .principal .caixa-publicacao .conteudo-resumo-materia .info-autor {
-    display: flex; /* Define o layout das informações como flexível */
-    flex-direction: row; /* Define a direção dos itens como linha */
-    align-items: center; /* Centraliza os itens verticalmente */
-    margin-left: 1.7vw; /* Adiciona margem à esquerda */
+    display: flex; /* Permite que o contêiner seja exibido como um flex container */
+    flex-direction: row; /* Define a direção dos itens como uma linha */
+    align-items: center; /* Alinha os itens ao centro no eixo secundário (vertical) */
+    margin-left: 1.7vw; /* Define a margem à esquerda */
 }
 
-/* Estilos para o nome do autor */
+/* Estiliza o nome do autor */
 .principal .caixa-publicacao .conteudo-resumo-materia .info-autor .nome-autor {
-    padding-left: 0.6vw; /* Adiciona espaço à esquerda do nome do autor */
+    padding-left: 0.6vw; /* Adiciona espaço à esquerda do elemento */
     font-size: 2.2vh; /* Define o tamanho da fonte */
 }
 
-/* Estilos para telas com largura máxima de 430px */
+/* Estilos para telas menores que 430px */
 @media only screen and (max-width: 430px) {
     .principal .caixa-publicacao {
-        width: 95vw; /* Define a largura da caixa de publicação para 95% da largura da viewport */
+        width: 95vw; /* Define a largura para 95% da largura da viewport */
     }
 
     .principal .caixa-publicacao .conteudo-resumo-materia .categoria-materia {
-        width: 20vw; /* Define a largura da categoria para 20% da largura da viewport */
+        width: 20vw; /* Define a largura para 20% da largura da viewport */
     }
 
     .principal .caixa-publicacao .img-blog img {
-        width: 60vw; /* Define a largura da imagem para 60% da largura da viewport */
+        width: 60vw; /* Define a largura para 60% da largura da viewport */
     }
 
     .principal .caixa-publicacao .conteudo-resumo-materia .info-autor .nome-autor {
-        padding-left: 1vw; /* Adiciona espaço à esquerda do nome do autor */
+        padding-left: 1vw; /* Adiciona espaço à esquerda do elemento */
     }
 }
 
-/* Estilos para telas com largura entre 431px e 600px */
+/* Estilos para telas entre 431px e 600px */
 @media only screen and (min-width: 431px) and (max-width: 600px) {
     .principal .caixa-publicacao {
-        width: 80vw; /* Define a largura da caixa de publicação para 80% da largura da viewport */
+        width: 80vw; /* Define a largura para 80% da largura da viewport */
     }
 }
 
 /* Estilos para telas com proporção de aspecto máxima de 9:16 */
 @media only screen and (max-aspect-ratio: 9/16) {
     .principal .caixa-publicacao {
-        width: 70vw; /* Define a largura da caixa de publicação para 70% da largura da viewport */
+        width: 70vw; /* Define a largura para 70% da largura da viewport */
     }
 
     .principal .caixa-publicacao .conteudo-resumo-materia .categoria-materia {
-        width: 25vw; /* Define a largura da categoria para 25% da largura da viewport */
+        width: 25vw; /* Define a largura para 25% da largura da viewport */
     }
 }
