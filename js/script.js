@@ -64,3 +64,16 @@ if (diaHoje < 10) {
 
 // Insere a data formatada no elemento HTML
 localEscritaData.innerText = diaHojeExtenso;
+
+// Selecione o elemento <p> dentro de <div class="categoria-materia">
+const categoriaMateria = document.querySelector('.categoria-materia p');
+
+// Obtenha a largura total do conteúdo textual dentro do elemento <p>
+const larguraConteudo = categoriaMateria.offsetWidth;
+
+// Adicione uma margem de 10 pixels ao redor do conteúdo textual
+const larguraComMargem = larguraConteudo + 20; // 20 = 10px para a margem esquerda + 10px para a margem direita
+
+// Defina a largura do elemento pai .categoria-materia com base na largura do conteúdo textual com margem
+const elementoPai = document.querySelector('.categoria-materia');
+elementoPai.style.width = larguraComMargem + 'px';
